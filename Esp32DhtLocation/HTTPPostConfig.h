@@ -9,4 +9,3 @@ const char* serverName = SERVER_CONNECTION_STRING;
 
 // Gets configured in the config.h file. 
 //If not available insert the address to the desired server between two " "
-

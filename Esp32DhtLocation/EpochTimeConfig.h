@@ -10,9 +10,11 @@ void initializeCurrentlLocationTime()
 
   // NTP server to request epoch time
   const char *ntpServer = "pool.ntp.org";
+  
   // Fetch Local Time API
   const char *timeApiUrl = "http://worldtimeapi.org/api/ip";
   const char *timeNistUrl = "time.nist.gov";
+  
   HTTPClient httpSocketClient;
 
   httpSocketClient.begin(timeApiUrl);

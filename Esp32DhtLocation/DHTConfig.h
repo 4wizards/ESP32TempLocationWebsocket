@@ -3,7 +3,7 @@
 #include "DHT.h"
 #include "DHT_U.h"
 
-#define DHTPIN 4      // Wont interfere with WiFi connectivity
+#define DHTPIN 22      // Wont interfere with WiFi connectivity
 #define DHTTYPE DHT11  // Just the booring old DHT11
 #define CELCIUS 0
 #define FARENHEIT 1
@@ -11,10 +11,11 @@
 
 DHT dht(DHTPIN, DHTTYPE);
 
+RTC_DATA_ATTR float previousTemp = NAN; //keeps value during deep sleep
+
 //Globaly accessable Sensordata
 float tempCelcius = NAN;
 float heatIndexCelcius = NAN;
-float previousTemp = NAN;
 float currentTemp = NAN;
 float humi = NAN;
 

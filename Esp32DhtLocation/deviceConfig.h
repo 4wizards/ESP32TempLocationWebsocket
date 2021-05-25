@@ -1,6 +1,10 @@
 #define SLEEPTIME 1000*10 // 10 seconds between sending
 
-String deviceName = "Ahmed";/*  "<-->" Please insert the name between the dubble fnutts that you want to give your device */
+#define DEEP_SLEEP_SECONDS 20
+
+#define ONBOARD_LED 2
+
+String deviceName = "VinniesLemons";/*  "<-->" Please insert the name between the dubble fnutts that you want to give your device */
 
 String mcuType = "esp32";
 
